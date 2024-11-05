@@ -4,9 +4,20 @@
     <title>Student List</title>
 </head>
 <body>
+<h3 th:text="${title}"></h3>
+<h3 th:text="${students.get(0)}"></h3>
+<h4 th:text="${students.get(0).getAge()}"></h4>
+<h4 th:text="${students.get(0).getGrade()}"></h4>
+<h4 th:text="${students.get(0).getName()}"></h4>
+
+
+
+
+
 <h1>Student List</h1>
 <table>
     <tbody>
+
     <tr th:each="student : ${students}">  <td th:text="${student.name}"></td>  <td th:text="${student.age}"></td>   <td th:text="${student.grade}"></td>  </tr>
     </tbody>
 </table>

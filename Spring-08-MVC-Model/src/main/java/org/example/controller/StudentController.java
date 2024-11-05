@@ -18,6 +18,10 @@ public class StudentController {
         );
         model.addAttribute("students", students);  // Add the student list to model
 
+        model.addAttribute("title","Sample Title");
+
+
+
         return "/student/welcome";
     }
 }
