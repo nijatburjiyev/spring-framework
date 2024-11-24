@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Student practice</title>
+</head>
+<body>
+<h1>Hello, Student!</h1>
+<h2 th:text="${students}"></h2>
+<h2 th:text="${students.get(0).getFirstName()}"></h2>
+
+
+</body>
+</html>
