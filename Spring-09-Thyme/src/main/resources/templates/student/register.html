@@ -7,6 +7,18 @@
 <h1>Hello, Student!</h1>
 <h2 th:text="${students}"></h2>
 <h2 th:text="${students.get(0).getFirstName()}"></h2>
+<a th:href="@{https://www.googl.com}">Google Home page</a><br>
+<a th:href="@{/welcome}">Link to another endpoint</a><br>
+
+<!---->
+
+<ul>
+    <li th:each="student : ${students}" th:text="${student.getFirstName()}"> </li>
+</ul>
+
+<!--Fragments usage-->
+
+<div th:replace="/fragments/index :: main-menu"> Menu </div>
 
 
 </body>
