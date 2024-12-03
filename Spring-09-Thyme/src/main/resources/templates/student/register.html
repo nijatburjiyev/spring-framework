@@ -18,7 +18,19 @@
 
 <!--Fragments usage-->
 
-<div th:replace="/fragments/index :: main-menu"> Menu </div>
+<div th:replace="/fragments/index :: main-menu"> Menu </div><br>
+
+
+<!--Conditional logic-->
+
+<div th:text="${students.get(0).getGrade() == 3 ? 'Valid' : ' Not Valid'}"></div>
+
+<div>
+    <span th:if="${students.get(0).getGrade() == 3}">Valid</span>
+    <span th:unless="${students.get(0).getGrade() == 3}">NOT Valid</span>
+
+</div>
+
 
 
 </body>
