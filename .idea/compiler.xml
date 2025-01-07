@@ -16,15 +16,6 @@
         <module name="Spring-03-Core-DI" />
         <module name="Spring-05-BeanScope" />
       </profile>
-      <profile name="Annotation profile for Spring-10-ORM-TableCreation" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="false">
-          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/unknown/lombok-unknown.jar" />
-        </processorPath>
-        <module name="Spring-10-ORM-TableCreation" />
-      </profile>
       <profile name="Annotation profile for Spring-11-ORM-Mapping-OneToOne" enabled="true">
         <sourceOutputDir name="../Spring-11-ORM-Mapping-OneToOne/target/generated-sources/annotations" />
         <sourceTestOutputDir name="../Spring-11-ORM-Mapping-OneToOne/target/generated-test-sources/test-annotations" />
@@ -33,6 +24,16 @@
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/unknown/lombok-unknown.jar" />
         </processorPath>
         <module name="Spring-11-ORM-Mapping-OneToOne" />
+      </profile>
+      <profile name="Annotation profile for Spring-12-ORM-Mapping-OneToMany-ManyTo-Many" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/unknown/lombok-unknown.jar" />
+        </processorPath>
+        <module name="Spring-12-ORM-Mapping-OneToMany-ManyTo-Many" />
+        <module name="Spring-10-ORM-TableCreation" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -47,6 +48,7 @@
       <module name="Spring-09-Thyme" options="-parameters" />
       <module name="Spring-10-ORM-TableCreation" options="-parameters" />
       <module name="Spring-11-ORM-Mapping-OneToOne" options="-parameters" />
+      <module name="Spring-12-ORM-Mapping-OneToMany-ManyTo-Many" options="-parameters" />
     </option>
   </component>
 </project>
